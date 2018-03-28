@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body {
+background-color: #02010a;
+font-family: 'Dancing Script';
+}
+
+header{
+	background-color: #5b7989;
+	color: white;
+	border-radius: 10px;
+	display: flex;
+	animation-duration: 2s;
+	animation-name: slidein;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+}
+
+@-webkit-keyframes slidein {
+	0%{margin-top: 150%;}
+	60%{margin-top: -5%;}
+	100%{margin-top: 0%;}
+}
+header h1{
+	text-shadow: 2px 2px #02010a;
+}
+a{
+	color: white;
+	margin: 10px;
+}
+footer {
+	border-radius: 10px 10px 0px 0px;
+	background-color: #C6d5c5;
+	display: flex;
+	flex-flow: row;
+	text-align: center;
+}
+footer div{
+	margin-right: 8%;
+	margin-left: 4%;
+}
+footer img{
+	width: 5%;
+	padding: 2px;
+}
+#contenido img{
+		margin: 3%;
+}
+img{
+	width: 50%;
+	text-shadow: 2px #02010a;
+}
+#imagen1{
+	text-align: center;
+	background-color: #82c3a6;
+	}
+#contenedor{
+	text-align: center;
+	background-color: #d5c75f;
+	border: 1px;
+}
+@media (min-width:900px) {
+	#contenedor{
+	display: flex;
+	flex-direction: row;
+	}
+	header{
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+
+@media (max-width:899px) {
+	footer{
+		flex-flow: column;
+	}
+	header{
+		flex-flow: column;
+		text-align: center;
+	}
+}
+#imagen2 img:hover{
+	transform:rotate(10deg);
+	border: solid 2px;
+	text-shadow:#82c3a6;
+}
+#imagen3 img:hover{
+	transform: translate(20px,-5px);
+	border: solid 2px;
+	text-shadow:#82c3a6;
+}

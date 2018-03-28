@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body {
+background-color: #02010a;
+font-family: 'Dancing Script';
+}
+
+header{
+	background-color: #5b7989;
+	color: white;
+	border-radius: 10px;
+	display: flex;
+	animation-duration: 2s;
+	animation-name: slidein;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+}
+@-webkit-keyframes slidein {
+	0%{margin-top: 150%;}
+	60%{margin-top: -5%;}
+	100%{margin-top: 0%;}
+}
+header h1{
+	text-shadow: 2px 2px #02010a;
+}
+header a{
+	color: white;
+	margin: 10px;
+}
+footer {
+	border-radius: 10px 10px 0px 0px;
+	background-color: #C6d5c5;
+	display: flex;
+	flex-flow: row;
+	text-align: center;
+}
+footer div{
+	margin-right: 8%;
+	margin-left: 4%;
+}
+footer img{
+	width: 5%;
+	padding: 2px;
+}
+img{
+  width: 100%;
+}
+#secundaria{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  background: #d5c75f;
+  min-height: 100px;
+  padding: 20px 0;
+}
+.columnaSeccundaria{
+  width: 33.33%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media (min-width:900px) {
+	header{
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+@media (max-width:899px) {
+	footer{
+		flex-flow: column;
+	}
+	header{
+		flex-flow: column;
+		text-align: center;
+	}
+	#contenido{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.columnaSeccundaria{
+		width: 100%;
+	}
+}
+.img1{
+	-webkit-filter:blur(10px);
+	filter: blur(10px);
+}
+.img2 .img4 .img6{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+.img3{
+	-webkit-filter:sepia(90%);
+	filter: sepia(90%);
+}
